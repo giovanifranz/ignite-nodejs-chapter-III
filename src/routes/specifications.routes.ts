@@ -1,7 +1,6 @@
-import type { Request, Response } from 'express'
-import { Router } from 'express'
+import { Request, Response, Router } from 'express'
 
-import { SpecificationsRepository } from '../modules/cars'
+import { SpecificationsRepository } from '../modules/cars/repositories/implementations/SpecificationRepository'
 import { CreateSpecificationService } from '../modules/cars/services/CreateSpecificationService'
 
 export const specificationRoutes = Router()
