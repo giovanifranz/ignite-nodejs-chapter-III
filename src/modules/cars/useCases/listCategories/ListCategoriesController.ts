@@ -5,7 +5,7 @@ import { ListCategoriesUseCase } from './ListCategoriesUseCase'
 export class ListCategoriesController {
   constructor(private listCategoriesUseCase: ListCategoriesUseCase) {}
 
-  handler(request: Request, response: Response): Response {
+  handle(request: Request, response: Response): Response {
     const all = this.listCategoriesUseCase.execute()
 
     return response.json(all)
