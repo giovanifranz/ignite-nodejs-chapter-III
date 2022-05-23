@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "docker:dev": "docker-compose up"
+    "docker:dev": "docker-compose up",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "author": "Giovani Franz",
   "license": "ISC",

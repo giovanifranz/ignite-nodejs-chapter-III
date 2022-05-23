@@ -8,7 +8,6 @@ import swaggerFile from '../src/swagger.json'
 import { router } from './routes'
 
 const app = express()
-
 app.use(express.json())
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
