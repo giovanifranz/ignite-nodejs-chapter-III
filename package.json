@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "18.0.0"
+    "node": "18.x"
   },
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "docker:dev": "docker-compose up"
   },
   "author": "Giovani Franz",
   "license": "ISC",
